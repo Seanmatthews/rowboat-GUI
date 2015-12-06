@@ -1,0 +1,2 @@
+gscam
+-DCATKIN_DEVEL_PREFIX=/vagrant/operator/devel -DCMAKE_INSTALL_PREFIX=/vagrant/operator/install -G Unix Makefiles
