@@ -9,13 +9,15 @@ sudo apt-get -y install python-dev
 sudo apt-get -y install g++
 
 # Video
-# sudo apt-get -y install libgstreamer0.10-dev 
-# sudo apt-get -y install libgstreamer-plugins-base0.10-dev
+sudo add-apt-repository -y ppa:mc3man/trusty-media
+sudo apt-get -y update
+sudo apt-get -y install libgstreamer0.10-dev 
+sudo apt-get -y install libgstreamer-plugins-base0.10-dev
+sudo apt-get -y install gstreamer-0.10
 sudo apt-get -y install gstreamer-app-0.10
-sudo apt-get -y install gstreamer0.10-plugins
-sudo add-apt-repository ppa:mc3man/trusty-media
-sudo apt-get update
-sudo apt-get -y install gstreamer1.0-ffmpeg
+sudo apt-get -y install gstreamer0.10*
+sudo apt-get -y install gstreamer0.10-tools
+sudo apt-get -y install gstreamer0.10-ffmpeg
 
 # ROS
 sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
@@ -29,6 +31,7 @@ source /opt/ros/jade/setup.bash
 
 sudo apt-get -y install python-rosinstall
 
-# 
+# Environment
+echo "source /vagrant/operator/devel/setup.bash" >> ~/.bashrc 
 
 exit
