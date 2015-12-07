@@ -1,5 +1,5 @@
-~/rowboat1/src/*/devel
-~/rowboat1/src/*/build
+~/rowboat-GUI/*/devel
+~/rowboat-GUI/*/build
 src/*/build
 src/*/devel
 .vagrant
