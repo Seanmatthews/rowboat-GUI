@@ -1,0 +1,3 @@
+[submodule "operator/src/gscam"]
+	path = operator/src/gscam
+	url = https://github.com/ros-drivers/gscam.git
