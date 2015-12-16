@@ -23,7 +23,7 @@ This is the operator/playback GUI for Brooklyn's [Diamond Reef Explorer's](http:
 5. `git clone https://github.com/Seanmatthews/rowboat1.git`
 6. From the rowboat1/src/install directory, run `./base-install.sh`
 7. `source ~/.bashrc`
-8. The ROS tutorials: http://wiki.ros.org/ROS/Tutorials
+8. If you’re new to ROS, follow the tutorials at http://wiki.ros.org/ROS/Tutorials
 
 
 Check us out at [Diamond Reef Explorers](http://www.diamondreefexplorers.org/)
