@@ -31,6 +31,14 @@ source /opt/ros/jade/setup.bash
 
 sudo apt-get -y install python-rosinstall
 
+# Update Git Submodules, for GScam
+git submodule update --init --recursive
+
+# Set up workspace
+cd /vagrant/operater
+catkin_make
+source /vagrant/operator/devel/setup.bash
+
 # Environment
 echo "source /vagrant/operator/devel/setup.bash" >> ~/.bashrc 
 
