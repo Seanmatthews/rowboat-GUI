@@ -35,7 +35,7 @@ sudo apt-get -y install python-rosinstall
 git submodule update --init --recursive
 
 # Set up workspace
-cd /vagrant/operater
+cd /vagrant/operator
 catkin_make
 source /vagrant/operator/devel/setup.bash
 
