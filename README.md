@@ -8,7 +8,6 @@ This is the operator/playback GUI for Brooklyn's [Diamond Reef Explorer's](http:
 0. Install Vagrant from https://www.vagrantup.com
 2. Install Git from https://git-scm.com 
 1. Checkout the project with Git
-2. Go to src directory
 3. `vagrant up` (this might take a few)
 4. `vagrant ssh`
 5. `/vagrant/base-install.sh`
@@ -20,8 +19,8 @@ This is the operator/playback GUI for Brooklyn's [Diamond Reef Explorer's](http:
 2. Download Ubuntu 14.04 Desktop from http://www.ubuntu.com
 3. Create a new Linux 64-bit VM and follow the steps to install your downloaded Ubuntu image.
 4. `sudo apt-get install git`
-5. `git clone https://github.com/Seanmatthews/rowboat1.git`
-6. From the rowboat1/src/install directory, run `./base-install.sh`
+5. `git clone https://github.com/Seanmatthews/rowboat-GUI.git`
+6. From the rowboat-GUI/install directory, run `./base-install.sh`
 7. `source ~/.bashrc`
 8. If you’re new to ROS, follow the tutorials at http://wiki.ros.org/ROS/Tutorials
 
