@@ -22,3 +22,18 @@ First: gscam relies on gstreamer. See if this plays a video:
 `gst-launch-0.10 filesrc location=/path/to/video ! decodebin ! ffmpegcolorspace ! ximagesink`
 
 If that works, not sure what the fuck to do next.
+
+## Problem 4
+Sometimes git submodules don't install after running the install script. For instance, gscam might not be able to find videofile.launch; this would imply that the gscam submodule was not installed.
+
+
+If `/vagrant/operator/src/gscam` is empty, it means the gscam submodule wasn't installed. To install, go to the folder and enter:
+
+```git submodule update --init --recursive```
+
+## Problem 5
+```cannot launch node of type [gscam/gscam]: can't locate node [gscam] in package [gscam]```
+
+Dunno wtf to do about this.
+
+Check us out at [Diamond Reef Explorers](http://www.diamondreefexplorers.org/)
