@@ -33,3 +33,9 @@ This is the operator/playback GUI for Brooklyn's [Diamond Reef Explorer's](http:
 
 Check out the problems file ([Problems.md](https://github.com/Seanmatthews/rowboat-GUI/blob/master/Problems.md)https://github.com/Seanmatthews/rowboat-GUI/blob/master/Problems.md).
 
+## Webcam
+The webcam won't appear in Vagrant by default. Follow these instructions:
+
+`http://code-chronicle.blogspot.com/2014/08/connect-usb-device-through-vagrant.html`
+
+Then, outside of Vagrant, `VBoxManage list usbhost` should return the webcam. Within vagrant, `lsusb` should also return the webcam.
