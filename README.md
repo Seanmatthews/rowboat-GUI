@@ -29,4 +29,16 @@ This is the operator/playback GUI for Brooklyn's [Diamond Reef Explorer's](http:
 1. For testing with video file `roslaunch gscam videofile.launch FILENAME:=<filename.mp4>`
 1. To visualize the stream `rosrun image_view image_view topic:=/videofile/camera/image_raw` 
 
+## Problems?
+Sometimes you have to update git submodules. Check out:
+
+```
+/vagrant/operator/src/gscam
+```
+
+If this folder is empty, it means the gscam submodule wasn't installed. To install, go to the folder and enter:
+
+```git submodule update --init --recursive```
+
+
 Check us out at [Diamond Reef Explorers](http://www.diamondreefexplorers.org/)
