@@ -64,6 +64,12 @@ Vagrant.configure(2) do |config|
        "--vendorid", "0x045e",
        "--productid", "0x028e"]
 
+    vb.customize ["usbfilter", "add", "0",
+      "--target", :id,
+      "--name", "liveCam",
+      "--vendorid", "0x041e",
+      "--productid", "0x4095"]
+
      # vb.customize ["modifyvm", 
 
 #     vb.customize ["modifyvm", :id, "--nicpromisc2", "allow-all"]
