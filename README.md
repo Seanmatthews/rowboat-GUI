@@ -31,5 +31,5 @@ This is the operator/playback GUI for Brooklyn's [Diamond Reef Explorer's](http:
 
 ## Problems?
 
-Check out the problems file (`Problems.md`).
+Check out the problems file ([Problems.md](https://github.com/Seanmatthews/rowboat-GUI/blob/master/Problems.md)https://github.com/Seanmatthews/rowboat-GUI/blob/master/Problems.md).
 
