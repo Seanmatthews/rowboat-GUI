@@ -34,6 +34,12 @@ If `/vagrant/operator/src/gscam` is empty, it means the gscam submodule wasn't i
 ## Problem 5
 ```cannot launch node of type [gscam/gscam]: can't locate node [gscam] in package [gscam]```
 
-Dunno wtf to do about this.
+If you ran into the missing git submodule issue above, you might need to run `catkin_make` again:
+
+```
+cd /vagrant/operator
+catkin_make
+source devel/setup.bash
+```
 
 Check us out at [Diamond Reef Explorers](http://www.diamondreefexplorers.org/)
