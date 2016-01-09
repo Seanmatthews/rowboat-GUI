@@ -25,9 +25,9 @@ This is the operator/playback GUI for Brooklyn's [Diamond Reef Explorer's](http:
 8. If you’re new to ROS, follow the tutorials at http://wiki.ros.org/ROS/Tutorials
 
 ## Startup
-1. `rosmaster`
+1. `roscore`
 1. For testing with video file `roslaunch gscam videofile.launch FILENAME:=<filename.mp4>`
-1. To visualize the stream `rosrun image_view image_view topic:=/videofile/camera/image_raw` 
+1. To visualize the stream `rosrun image_view image_view image:=/videofile/camera/image_raw` 
 
 ## Problems?
 
