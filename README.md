@@ -40,7 +40,7 @@ source ~/.bashrc
 
 ## Problems?
 
-Check out the problems file ([Problems.md](https://github.com/Seanmatthews/rowboat-GUI/blob/master/Problems.md)https://github.com/Seanmatthews/rowboat-GUI/blob/master/Problems.md).
+Check out the [problems file](https://github.com/Seanmatthews/rowboat-GUI/blob/master/Problems.md).
 
 ## Webcam
 The webcam won't appear in Vagrant by default. Follow these instructions:
