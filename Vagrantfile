@@ -38,7 +38,9 @@ Vagrant.configure(2) do |config|
 
   config.ssh.forward_x11 = true
   config.vm.box = "ubuntu/trusty64"
-  config.vm.network :public_network, ip: "192.168.1.99", :public_network => "en5"
+  config.vm.network "forwarded_port", guest: 8554, host: 8554  
+  config.vm.network :public_network, ip: "10.5.5.99", :public_network => "en5"
+  #config.vm.network :public_network, ip: "192.168.1.99", :public_network => "en5"
   # config.vm.provision "shell",
     # run: "always",
     # inline: "ifconfig eth1 192.168.1.111 netmask 255.255.255.255 broadcast 192.169.1.255 up"
