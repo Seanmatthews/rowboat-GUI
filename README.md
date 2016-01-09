@@ -29,6 +29,15 @@ This is the operator/playback GUI for Brooklyn's [Diamond Reef Explorer's](http:
 1. For testing with video file `roslaunch gscam videofile.launch FILENAME:=<filename.mp4>`
 1. To visualize the stream `rosrun image_view image_view image:=/videofile/camera/image_raw` 
 
+## Installing additional ROS packages
+
+`ros-packages-install.sh` has additional packages like the web-video-server. To install:
+
+```
+./ros-packages-install.sh
+source ~/.bashrc
+```
+
 ## Problems?
 
 Check out the problems file ([Problems.md](https://github.com/Seanmatthews/rowboat-GUI/blob/master/Problems.md)https://github.com/Seanmatthews/rowboat-GUI/blob/master/Problems.md).
