@@ -41,6 +41,7 @@ ros.getParams(function(params) {
   //console.log(params);
 });
 
+/*
 var i = new ROSLIB.Topic({
   ros : ros,
   name : '/videofile/camera/image_raw'
@@ -50,16 +51,10 @@ var ImageData1;
 i.subscribe(function(message) {
   m = message;
   console.log('the message', message);
-  ImageData1="data:image/jpg;base64, "+message.data;
+  ImageData1="data:image/jpeg;base64, "+btoa(message.data);
   displayImage = document.getElementById("img");
   displayImage.setAttribute('src', ImageData1);
   i.unsubscribe();
-
-  /*
-  var c = document.getElementById("canvas");
-  var ctx = c.getContext("2d");
-  ctx.fillStyle = "#FF0000";
-  ctx.fillRect(0,0,150,75);
-  */
-
 });
+
+*/

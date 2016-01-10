@@ -5,15 +5,26 @@
 
     <script type="text/javascript" src="http://cdn.robotwebtools.org/EventEmitter2/current/eventemitter2.min.js"></script>
     <script type="text/javascript" src="http://cdn.robotwebtools.org/roslibjs/current/roslib.min.js"></script>
+    <style type="text/css">
+body, html {
+  margin: 0;
+  padding: 0;
+}
+.camera img {
+  width: 10%;
+}
+    </style>
 
   </head>
 
   <body>
-    <h1>Simple roslib Example</h1>
-    <p>Check your Web Console for output.</p>
-
-    <img id="img" />
-    <canvas id="canvas" />
+    <div class="camera" style="width: 100%">
+    <img id="img" src="http://localhost:8080/stream?topic=/videofile/camera/image_raw" />
+    </div>
+      <!--<video width="320" height="240" controls>-->
+            <!--<source src="http://localhost:8080/stream?topic=/videofile/camera/image_raw&type=vp8" type="video/mp4">-->
+            <!--Your browser does not support the video tag.-->
+      <!--</video>-->
 
       <script type="text/javascript" type="text/javascript" src="test.js"></script>
   </body>
