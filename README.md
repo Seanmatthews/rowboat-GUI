@@ -48,3 +48,11 @@ The webcam won't appear in Vagrant by default. Follow these instructions:
 `http://code-chronicle.blogspot.com/2014/08/connect-usb-device-through-vagrant.html`
 
 Then, outside of Vagrant, `VBoxManage list usbhost` should return the webcam. Within vagrant, `lsusb` should also return the webcam.
+
+## Web Video Server
+
+To get a video running, you can use web_video_server.
+
+```
+ rosrun web_video_server web_video_server
+```
