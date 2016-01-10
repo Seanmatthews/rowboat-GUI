@@ -52,7 +52,8 @@ Vagrant.configure(2) do |config|
   # Example for VirtualBox:
   #
   config.vm.provider "virtualbox" do |vb|
-  #   # Display the VirtualBox GUI when booting the machine
+
+     vb.name = "rowboat-GUI"
      vb.gui = false
   #
   #   # Customize the amount of memory on the VM:
