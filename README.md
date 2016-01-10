@@ -42,7 +42,7 @@ source ~/.bashrc
 
 Check out the [problems file](https://github.com/Seanmatthews/rowboat-GUI/blob/master/Problems.md).
 
-## Webcam
+## Webcam (this doesn't work)
 The webcam won't appear in Vagrant by default. Follow these instructions:
 
 `http://code-chronicle.blogspot.com/2014/08/connect-usb-device-through-vagrant.html`
@@ -54,5 +54,6 @@ Then, outside of Vagrant, `VBoxManage list usbhost` should return the webcam. Wi
 To get a video running, you can use web_video_server.
 
 ```
+ roslaunch gscam videofile.launch FILENAME:=<filename.mp4> 
  rosrun web_video_server web_video_server
 ```
