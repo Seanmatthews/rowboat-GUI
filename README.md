@@ -6,6 +6,7 @@ This is the operator/playback GUI for Brooklyn's [Diamond Reef Explorer's](http:
 ## Mac/Linux Setup
 0. Install VirtualBox from https://www.virtualbox.org/wiki/Downloads
 0. Install Vagrant from https://www.vagrantup.com
+1. `vagrant plugin install vagrant-vbguest`
 2. Install Git from https://git-scm.com 
 1. Checkout the project with Git
 3. `vagrant up` (this might take a few)
