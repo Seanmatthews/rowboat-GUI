@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /vagrant/server/install/setup.sh

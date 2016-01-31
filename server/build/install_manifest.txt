@@ -1,0 +1,6 @@
+/vagrant/server/install/_setup_util.py
+/vagrant/server/install/env.sh
+/vagrant/server/install/setup.bash
+/vagrant/server/install/setup.sh
+/vagrant/server/install/setup.zsh
+/vagrant/server/install/.rosinstall

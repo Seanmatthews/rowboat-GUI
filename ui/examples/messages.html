@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+    <script type="text/javascript" src="http://cdn.robotwebtools.org/EventEmitter2/current/eventemitter2.min.js"></script>
+    <script type="text/javascript" src="http://cdn.robotwebtools.org/roslibjs/current/roslib.min.js"></script>
+
+  </head>
+
+  <body>
+    <h1>Messages Example</h1>
+    <p>This will stream random noise data from ROS, and optionally start and stop the random noise broadcasting on the ROS side.</p>
+    <p>To run on the ROS side, run the following commands:</p>
+    <ul style="font-family: monospace">
+      <li>roscore</li>
+      <li>roslaunch rosbridge_server rosbridge_websocket.launch</li>
+      <li>rosrun basics noise.py</li>
+    </ul>
+    <p>The first command spins up ROS, the second command will publish the ROS bridge server which allows for communication through websockets, and the third command broadcasts random noise data on the /chatter topic.</p>
+    <p>Below, the random noise is written into the output div. The button will broadcast the messages "start" and "stop", which are interpreted by the /chatter topic to start and stop broadcasting random data.</p>
+    <p><strong>Sometimes, commands can take a while to be caught by ROS, so give it a sec or two.</strong></p>
+    <hr />
+      <p>Random Noise Output: </p>
+      <p id="output"></p>
+      <input type="button" id="button" value="Stop" />
+      <script type="text/javascript" src="messages.js"></script>
+  </body>
+</html>

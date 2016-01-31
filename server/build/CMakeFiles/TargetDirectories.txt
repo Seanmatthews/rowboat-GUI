@@ -1,0 +1,8 @@
+/vagrant/server/build/CMakeFiles/clean_test_results.dir
+/vagrant/server/build/CMakeFiles/clean_test_results_Project.dir
+/vagrant/server/build/CMakeFiles/download_extra_data.dir
+/vagrant/server/build/CMakeFiles/doxygen.dir
+/vagrant/server/build/gtest/CMakeFiles/gtest.dir
+/vagrant/server/build/gtest/CMakeFiles/gtest_main.dir
+/vagrant/server/build/CMakeFiles/run_tests.dir
+/vagrant/server/build/CMakeFiles/tests.dir

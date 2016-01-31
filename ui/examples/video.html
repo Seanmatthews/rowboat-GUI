@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+
+    <script type="text/javascript" src="http://cdn.robotwebtools.org/EventEmitter2/current/eventemitter2.min.js"></script>
+    <script type="text/javascript" src="http://cdn.robotwebtools.org/roslibjs/current/roslib.min.js"></script>
+    <style type="text/css">
+body, html {
+  margin: 0;
+  padding: 0;
+}
+.camera img {
+  width: 45%;
+    margin: 0 auto;
+      display: block;
+}
+    </style>
+
+  </head>
+
+  <body>
+    <h1>Video Example</h1>
+    <p>This streams a video from ROS.</p>
+    <p>To run on the ROS side, run the following commands:</p>
+    <ul style="font-family: monospace">
+      <li>roscore</li>
+      <li>roslaunch gscam videofile.launch FILENAME:=/vagrant/videos/bigbuck.mp4 </li>
+      <li>rosrun web_video_server web_video_server</li>
+    </ul>
+    <p>The first command spins up ROS, the second command will publish the video file "bigbuck" (which is a horrible fucking movie that I hate, SORRY) and the third command will expose said video on port 8080.</p>
+    <p>Then, the <img /> tag below should have its src set as the image output, and the video should automatially play. Currently there's no way to control the video, still working on that.</p>
+    <hr />
+    <div class="camera" style="width: 100%">
+      <img id="img" src="http://localhost:8080/stream?topic=/videofile/camera/image_raw" />
+    </div>
+    <script type="text/javascript" src="video.js"></script>
+  </body>
+</html>

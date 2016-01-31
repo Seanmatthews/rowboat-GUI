@@ -1,0 +1,2 @@
+
+-DCATKIN_DEVEL_PREFIX=/vagrant/server/devel -DCMAKE_INSTALL_PREFIX=/vagrant/server/install -G Unix Makefiles
