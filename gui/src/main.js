@@ -7,10 +7,10 @@ const Application = require('./application');
 ReactDOM.render(<Application />, document.getElementById('main'));
 
 const hours = (new Date()).getHours(); 
-if (hours > 7 && hours < 24 ) {
-  $('body').addClass('light');
-} else {
+if (0 && (hours < 7 || hours > 20)) {
   $('body').addClass('dark');
+} else {
+  $('body').addClass('light');
 }
 
 setTimeout(() => {

@@ -57,11 +57,11 @@
 
 .light {
   .controls {
-    background: @offset-light;
+    background: @main-light;
 
     a {
       &:hover, &.selected {
-        background: @offset-light;
+        background: @hover-light;
       }
     }
   }
@@ -69,12 +69,16 @@
 
 .dark {
   .controls {
-    background: @offset-dark;
+    background: @main-dark;
 
     a {
       &:hover, &.selected {
-        background: @offset-dark;
+        background: @hover-dark;
       }
     }
+  }
+
+  svg {
+    color: white;
   }
 }
