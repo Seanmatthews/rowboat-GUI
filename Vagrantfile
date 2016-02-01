@@ -41,7 +41,7 @@ Vagrant.configure(2) do |config|
   config.vm.network "forwarded_port", guest: 8554, host: 8554  
   config.vm.network "forwarded_port", guest: 8080, host: 8080
   config.vm.network "forwarded_port", guest: 9090, host: 9090 # Default rosbridge_server
-  config.vm.network :public_network, ip: "10.5.5.99", :public_network => "en5"
+  config.vm.network :public_network, ip: "192.168.10.87", :public_network => "en5"
   #config.vm.network :public_network, ip: "192.168.1.99", :public_network => "en5"
   # config.vm.provision "shell",
     # run: "always",
