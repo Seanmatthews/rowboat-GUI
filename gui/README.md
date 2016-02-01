@@ -2,6 +2,29 @@
 
 To run, make sure the relevant ROS things are running on the server, and just hit the index.html page.
 
+## Server
+
+First, make sure your URI is set to localhost:
+ 
+ ```
+ export MASTER_ROS_URI=http://localhost:11311
+ ```
+
+Then, these are the commands you'll need to run on the ROS end:
+1. `roscore`
+
+###VIDEO
+2. `roslaunch gscam videofile.launch FILENAME:=/vagrant/videos/bigbuck.mp4`
+3. `rosrun web_video_server web_video_server`
+
+###JOYSTICK
+4. `rosparam set joy_node/dev "/dev/input/js0"`
+5. `rosrun joy joy_node`
+6. `rostopic echo /joy`
+
+###SERVER
+6. `roslaunch rosbridge_server rosbridge_websocket.launch`
+
 ## Developing
 
 We're using webpack. You'll need to do:

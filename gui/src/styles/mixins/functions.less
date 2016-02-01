@@ -1,0 +1,19 @@
+.align(@position) {
+  -ms-flex-align: ~"@{position}";
+  -webkit-align-items: ~"@{position}";
+  -webkit-box-align:~"@{position}";
+
+  align-items: ~"@{position}";
+}
+
+.vertical-gradient(@color) {
+  @bottom: fade(@color, 0%);
+  @top: fade(@color, 100%);
+  background: linear-gradient(to bottom, @bottom, @top, @bottom);
+}
+
+.horizontal-gradient(@color) {
+  @bottom: fade(@color, 0%);
+  @top: fade(@color, 100%);
+  background: linear-gradient(to right, @bottom, @top, @bottom);
+}

@@ -1,0 +1,80 @@
+.controller {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+
+  .controls {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-bottom: 1px solid #CCC;
+    font-size: 10px;
+
+    a {
+      cursor: pointer;
+      border-left: 1px solid #CCC;
+      padding: @padding;
+      display: block;
+      float: left;
+    }
+  }
+
+  .svg-container {
+    @highlight: deepPink;
+    max-height: 100%;
+
+    &.B {
+      circle[cx="467.312"] {
+        fill: @highlight;
+      }
+    }
+
+    &.A {
+      circle[cx="426.98"][cy="236.124"] {
+        fill: @highlight;
+      }
+    }
+
+    &.X {
+      circle[cx="386.649"] {
+        fill: @highlight;
+      }
+    }
+
+    &.Y {
+      circle[cx="426.98"][cy="155.462"] {
+        fill: @highlight;
+      }
+    }
+
+    svg {
+      display: block;
+      height: 100%;
+      margin: 0 auto;
+    }
+  }
+}
+
+.light {
+  .controls {
+    background: @offset-light;
+
+    a {
+      &:hover, &.selected {
+        background: @offset-light;
+      }
+    }
+  }
+}
+
+.dark {
+  .controls {
+    background: @offset-dark;
+
+    a {
+      &:hover, &.selected {
+        background: @offset-dark;
+      }
+    }
+  }
+}

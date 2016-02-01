@@ -1,0 +1,112 @@
+body {
+  background: #EEE;
+
+  &.animate {
+    .transition-duration(1s);
+  }
+}
+
+#main {
+  height: 100%;
+}
+
+.application {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.light {
+  background: @background-light;
+  color: @color-dark;
+
+  .panel {
+    background: @main-light;
+
+    border: 1px solid @panel-light-border;
+  }
+
+  .divider {
+    .thumb {
+      background: @panel-light-border;
+    }
+  }
+}
+
+.dark {
+  background: @background-dark;
+  color: @color-light;
+
+  .panel {
+    background: @main-dark;
+
+    border: 1px solid @panel-dark-border;
+  }
+
+  .divider {
+    .thumb {
+      background: @panel-dark-border;
+    }
+  }
+}
+
+.container {
+  display: flex;
+  flex: 1;
+  height: 100%;
+  margin: @padding;
+
+  &.horizontal {
+    flex-direction: column;
+  }
+}
+
+.divider {
+  padding: @padding / 2;
+  display: flex;
+  .align("center");
+
+  &:hover {
+    cursor: col-resize;
+    .vertical-gradient(@divider-light-highlight)
+  }
+
+
+  .thumb {
+    height: 20px;
+    width: 1px;
+  }
+}
+
+.horizontal {
+  .divider {
+    display: flex;
+    .align("center");
+
+    &:hover {
+      cursor: row-resize;
+      .horizontal-gradient(@divider-light-highlight)
+    }
+
+    .thumb {
+      height: 1px;
+      width: 20px;
+      margin: 0 auto;
+    }
+  }
+}
+
+.panel {
+  .transition-duration(0s);
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+
+  &.dragged {
+    flex: none;
+  }
+}
+
+.code {
+  font-family: monospace;
+}
